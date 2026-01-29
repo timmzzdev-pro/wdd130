@@ -49,6 +49,9 @@ footer {
 .site-header img {
     width: 100px;
     border-radius: 10px;
+    margin-left: 80px;
+    box-shadow: 0 0 40px #1b4d1a;
+
 }
 
 /* ================================
@@ -64,14 +67,15 @@ footer {
 .navigation {
     display: flex;
     list-style: none;
-    gap: 16px;
+    gap: 1px;
 }
 
 /* EACH item in its own box */
 .navigation li {
     background-color: #ffffff;
     padding: 10px 18px;
-    border-radius: 12px;
+    border-radius: 5%;
+    box-shadow: 0 0 40px #1b4d1a;
 }
 
 /* Links */
@@ -134,11 +138,21 @@ article {
 
 .hero article {
     position: absolute;
-    bottom: 20px;
-    left: 20px;
+    bottom: 20%;
+    top: auto;
+    left: 15px;
+    right: 15px;
     background-color: rgba(255, 255, 255, 0.7);
     max-width: 800px;
     padding: 12px;
+}
+
+.hero article img {
+    width: 125px;
+    float: right;
+    /* removed float because flex aligns items */
+    border: 1px solid #a3a2a2;
+    box-shadow: 0 0 60px #1a2131;
 }
 
 /* ================================
@@ -161,7 +175,7 @@ article {
 .adventure-gallery {
     display: flex;
     justify-content: space-between;
-    gap: 12px;
+    gap: 14px;
 }
 
 .adventure-gallery img {
