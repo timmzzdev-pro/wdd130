@@ -136,19 +136,31 @@ article {
     opacity: 0.85;
 }
 
+.hero {
+    position: relative;
+}
+
 .hero article {
     position: absolute;
-    bottom: 20%;
-    top: auto;
-    left: 15px;
-    right: 15px;
-    background-color: rgba(255, 255, 255, 0.7);
+    left: 50%;
+    right: 50px;
+    bottom: 15%;
+    transform: translateX(-50%);
+
+    width: 100%;
     max-width: 800px;
-    padding: 12px;
+    padding: 16px;
+
+    background-color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    padding: 16px;
+    text-align: center;
+    border-radius: 8px;
+    box-sizing: border-box;
 }
 
 .hero article img {
-    width: 125px;
+    width: 100px;
     float: right;
     /* removed float because flex aligns items */
     border: 1px solid #a3a2a2;
@@ -167,6 +179,7 @@ article {
 
 .history-content img {
     width: 180px;
+    box-shadow: 0 0 20px #a9c6d2;
 }
 
 /* ================================
@@ -180,6 +193,7 @@ article {
 
 .adventure-gallery img {
     max-width: 140px;
+    box-shadow: 0 0 40px #acabab;
 }
 
 /* ================================
@@ -196,4 +210,6 @@ article {
 
 .socialmedia img {
     width: 32px;
+    margin: 0 12px;
+    box-shadow: 0 0 20px #397790;
 }
