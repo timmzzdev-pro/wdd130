@@ -44,27 +44,24 @@ footer {
     align-items: center;
     background-color: var(--primary-color);
     padding: 16px;
+    border-radius: 8px;
+    margin: 16px 0;
+    /* spacing around the header */
 }
 
 .site-header img {
     width: 100px;
-    margin: 0 16px 0 0;
-    /* add space around logo */
-    border-radius: 10px;
+}
+
+.site-header nav {
+    background: white;
+    border-radius: 6px;
+    padding: 8px;
 }
 
 /* ================================
    Navigation (CSS Flexbox)
 ================================ */
-.nav-container {
-    display: grid;
-    grid-template-columns: auto;
-    background-color: #fff;
-    /* white box behind nav */
-    padding: 8px 16px;
-    border-radius: 6px;
-}
-
 .navigation {
     display: flex;
     list-style: none;
@@ -73,11 +70,11 @@ footer {
 }
 
 .navigation a {
-    color: var(--accent1-color);
+    color: #000;
     text-decoration: none;
     padding: 8px 12px;
+    background-color: white;
     border-radius: 4px;
-    font-weight: bold;
 }
 
 /* ================================
@@ -125,26 +122,29 @@ article {
     opacity: 0.8;
 }
 
-.hero article {
+/* ================================
+   Hero Article Layout
+   Image left, text right, centered vertically
+================================ */
+.hero-article {
     display: flex;
     align-items: center;
-    /* vertically center the paragraph next to the image */
     gap: 16px;
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
     background-color: rgba(255, 255, 255, 0.9);
-    max-width: 600px;
-    padding: 12px;
-    overflow: auto;
+    padding: 16px;
+    margin: 16px;
 }
 
-.hero article img {
-    width: 125px;
+.hero-article img {
     float: none;
-    /* removed float because flex aligns items */
+    width: 140px;
     border: 1px solid #333;
     box-shadow: 0 0 40px #1a2131;
+}
+
+.hero-article .article-text {
+    text-align: left;
+    /* paragraph aligned with h2 at top */
 }
 
 /* ================================
