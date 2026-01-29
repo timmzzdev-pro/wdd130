@@ -44,24 +44,27 @@ footer {
     align-items: center;
     background-color: var(--primary-color);
     padding: 16px;
-    border-radius: 8px;
-    margin: 16px 0;
-    /* spacing around the header */
 }
 
 .site-header img {
     width: 100px;
-}
-
-.site-header nav {
-    background: white;
-    border-radius: 6px;
-    padding: 8px;
+    margin: 0 16px 0 0;
+    /* add space around logo */
+    border-radius: 10px;
 }
 
 /* ================================
    Navigation (CSS Flexbox)
 ================================ */
+.nav-container {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #fff;
+    /* white box behind nav */
+    padding: 8px 16px;
+    border-radius: 6px;
+}
+
 .navigation {
     display: flex;
     list-style: none;
@@ -70,11 +73,11 @@ footer {
 }
 
 .navigation a {
-    color: #000;
+    color: var(--accent1-color);
     text-decoration: none;
     padding: 8px 12px;
-    background-color: white;
     border-radius: 4px;
+    font-weight: bold;
 }
 
 /* ================================
@@ -85,6 +88,7 @@ h2,
 h3 {
     font-family: var(--heading-font);
     color: var(--primary-color);
+    text-align: center;
 }
 
 /* ================================
@@ -122,29 +126,28 @@ article {
     opacity: 0.8;
 }
 
-/* ================================
-   Hero Article Layout
-   Image left, text right, centered vertically
-================================ */
-.hero-article {
-    display: flex;
+.hero article {
+    display: flexbox;
     align-items: center;
+    /* vertically center the paragraph next to the image */
     gap: 16px;
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 16px;
-    margin: 16px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 12px;
+    overflow: auto;
+
 }
 
-.hero-article img {
-    float: none;
-    width: 140px;
+.hero article img {
+    width: 125px;
+    float: right;
+    /* removed float because flex aligns items */
     border: 1px solid #333;
     box-shadow: 0 0 40px #1a2131;
-}
-
-.hero-article .article-text {
-    text-align: left;
-    /* paragraph aligned with h2 at top */
 }
 
 /* ================================
