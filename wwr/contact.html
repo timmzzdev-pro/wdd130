@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Contact Us | White Water Rafting Adventures</title>
+    <title>Contact Us | White Water Rafting Company</title>
     <meta name="description"
-      content="Contact White Water Rafting Adventures to ask questions, make reservations, or get trip information. Find our address, phone number, email, and location map.">
+      content="Contact White Water Rafting Company for general inquiries, reservations, or website suggestions. Find our address, phone number, email, staff profiles, and location map.">
 
     <meta name="author" content="Olajide Timilehin">
     <link rel="stylesheet" href="styles/rafting.css">
@@ -15,9 +15,9 @@
 
 <body>
 
-    <!-- HEADER (UNCHANGED) -->
+    <!-- HEADER (SAME AS OTHER PAGES) -->
     <header class="site-header">
-        <img src="images/z-therapidssplash.jpg" alt="Whitewater rafting company logo">
+        <img src="images/z-therapidssplash.jpg" alt="Whitewater rafting logo">
 
         <nav class="nav-box">
             <ul class="navigation">
@@ -29,26 +29,57 @@
         </nav>
     </header>
 
-    <!-- MAIN CONTENT -->
+    <!-- MAIN -->
     <main class="contact-page">
 
-        <h1>Contact White Water Rafting</h1>
-
         <!-- COMPANY INFO -->
-        <section class="contact-info">
-            <h2>Company Information</h2>
-            <p><strong>Address:</strong> no 6 ifaki street ojodu berger</p>
-            <p><strong>Phone:</strong> +1 (999) 999-9999</p>
-            <p><strong>Email:</strong> info@whitewater.com</p>
+        <section class="company-info">
+            <h1>White Water Rafting Company</h1>
+            <p>123 Main River Street<br>Kolob, California</p>
+            <p>+1 999 999 9999</p>
+            <p>info@whitewater.com</p>
         </section>
 
-        <!-- MAP -->
-        <section class="map">
-            <h2>Our Location</h2>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63408.95626070473!2d3.333726648374032!3d6.639500591994381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bd1f3e91f564d%3A0x15354cf6c01de3e1!2sBerger%20Bus-Stop!5e0!3m2!1sen!2sng!4v1770255127670!5m2!1sen!2sng"
-              loading="lazy" referrerpolicy=" no-referrer-when-downgrade">
-            </iframe>
+        <!-- MAP + FORM -->
+        <section class="contact-layout">
+
+            <!-- MAP -->
+            <div class="map-box">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63408.95626070473!2d3.333726648374032!3d6.639500591994381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bd1f3e91f564d%3A0x15354cf6c01de3e1!2sBerger%20Bus-Stop!5e0!3m2!1sen!2sng!4v1770255127670!5m2!1sen!2sng"
+                  loading="lazy" allowfullscreen>
+                </iframe>
+            </div>
+
+            <!-- FORM -->
+            <div class="form-box">
+                <form>
+                    <label>Name
+                        <input type="text" required>
+                    </label>
+
+                    <label>Email
+                        <input type="email" required>
+                    </label>
+
+                    <fieldset>
+                        <legend>Message Purpose</legend>
+                        <label><input type="radio" name="purpose" required> General Inquiry</label>
+                        <label><input type="radio" name="purpose"> Reservation Question</label>
+                        <label><input type="radio" name="purpose"> Website Suggestion</label>
+                    </fieldset>
+
+                    <label>Message
+                        <textarea rows="4" required></textarea>
+                    </label>
+
+                    <label class="newsletter">
+                        <input type="checkbox"> Please subscribe me to the monthly newsletter
+                    </label>
+
+                    <button type="submit" class="submit-btn">Get in Touch!</button>
+                </form>
+            </div>
         </section>
 
         <!-- EMPLOYEES -->
@@ -57,77 +88,32 @@
 
             <div class="employee-grid">
                 <figure>
-                    <img src="images/tm.avif" Lead River Guide">
-                    <figcaption>Alex Morgan – Lead River Guide</figcaption>
+                    <img src="images/tttiimm.avif" River Guide">
+                    <figcaption>Lead River Guide</figcaption>
                 </figure>
 
                 <figure>
-                    <img src="images/tttiimm.avif" Trip Coordinator">
-                    <figcaption>Jamie Lee – Trip Coordinator</figcaption>
+                    <img src="images/tm.avif" Trip Planner">
+                    <figcaption>Trip Coordinator</figcaption>
                 </figure>
 
                 <figure>
-                    <img src="images/tim.avif">
-                    <figcaption>Chris Nolan – Safety Manager</figcaption>
+                    <img src="images/tim.avif" Operations Manager">
+                    <figcaption>Operations Manager</figcaption>
                 </figure>
             </div>
         </section>
 
-        <!-- CONTACT FORM -->
-        <section class="contact-form">
-            <h2>Send Us a Message</h2>
-
-            <form action="#" method="post">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-
-                <fieldset>
-                    <legend>Message Purpose</legend>
-
-                    <label>
-                        <input type="radio" name="purpose" value="general" required>
-                        General Inquiry
-                    </label>
-
-                    <label>
-                        <input type="radio" name="purpose" value="reservation">
-                        Reservation Question
-                    </label>
-
-                    <label>
-                        <input type="radio" name="purpose" value="website">
-                        Website Suggestion
-                    </label>
-                </fieldset>
-
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-
-                <label class="checkbox">
-                    <input type="checkbox" name="newsletter">
-                    Please subscribe me to the monthly newsletter
-                </label>
-
-                <button type="submit" class="submit-btn">Get in Touch</button>
-            </form>
-        </section>
-
     </main>
 
-    <!-- FOOTER (UNCHANGED) -->
+    <!-- FOOTER (SAME AS OTHER PAGES) -->
     <footer class="site-footer">
         <p>©2026 💦Whitewater Rafting💦 | Olajide Timilehin</p>
 
         <nav class="socialmedia">
-            <a href="https://facebook.com/"><img src="images/facebook-color-svgrepo-com.svg"
-                  alt="Facebook"></a>
-            <a href="https://linkedin.com/"><img src="images/linkedin-svgrepo-com.svg"
-                  alt="LinkedIn"></a>
-            <a href="https://instagram.com/"><img src="images/instagram-1-svgrepo-com.svg"
-                  alt="Instagram"></a>
+            <a href="#"><img src="images/facebook-color-svgrepo-com.svg" alt="Facebook"></a>
+            <a href="#"><img src="images/linkedin-svgrepo-com.svg" alt="LinkedIn"></a>
+            <a href="#"><img src="images/instagram-1-svgrepo-com.svg" alt="Instagram"></a>
         </nav>
     </footer>
 
