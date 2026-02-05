@@ -62,12 +62,27 @@
                         <input type="email" required>
                     </label>
 
-                    <fieldset>
+                    <fieldset class="purpose-group">
                         <legend>Message Purpose</legend>
-                        <label><input type="radio" name="purpose" required> General Inquiry</label>
-                        <label><input type="radio" name="purpose"> Reservation Question</label>
-                        <label><input type="radio" name="purpose"> Website Suggestion</label>
+
+                        <div class="purpose-options">
+                            <label>
+                                <input type="radio" name="purpose" value="general" required>
+                                <span>General Inquiry</span>
+                            </label>
+
+                            <label>
+                                <input type="radio" name="purpose" value="reservation">
+                                <span>Reservation Question</span>
+                            </label>
+
+                            <label>
+                                <input type="radio" name="purpose" value="website">
+                                <span>Website Suggestion</span>
+                            </label>
+                        </div>
                     </fieldset>
+
 
                     <label>Message
                         <textarea rows="4" required></textarea>
