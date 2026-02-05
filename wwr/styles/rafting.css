@@ -255,16 +255,46 @@ article {
     padding: 6px;
 }
 
-fieldset {
-    border: 1px solid #ccc;
-    padding: 10px;
+/* ================================
+   Message Purpose (Wireframe Exact)
+================================ */
+
+.purpose-group {
+    border: none;
+    padding: 0;
+    margin: 12px 0;
+
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    column-gap: 12px;
 }
 
+.purpose-group legend {
+    grid-column: 1;
+    font-weight: bold;
+    margin-top: 26px;
+    /* aligns with Reservation Question */
+}
+
+.purpose-group label {
+    grid-column: 2;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 6px;
+    cursor: pointer;
+}
+
+.purpose-group input[type="radio"] {
+    margin: 0;
+}
+
+/* Newsletter */
 .newsletter {
     font-size: 0.9rem;
 }
 
-/* Button */
+/* Submit Button */
 .submit-btn {
     background-color: var(--primary-color);
     color: #fff;
@@ -278,7 +308,10 @@ fieldset {
     background-color: #3d850c;
 }
 
-/* Employees */
+/* ================================
+   Employees
+================================ */
+
 .employees h2 {
     text-align: center;
 }
