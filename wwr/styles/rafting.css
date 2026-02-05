@@ -218,14 +218,26 @@ article {
    CONTACT PAGE
 ================================ */
 
-.contact-page h1 {
-    text-align: center;
-    margin-bottom: 10px;
+/* ================================
+   Contact Page Spacing Fix
+================================ */
+
+/* Reduce spacing between address, phone, email */
+.contact-page .company-info p {
+    margin: 4px 0;
+    /* tighter vertical spacing */
+    padding: 0;
 }
 
-.company-info {
-    text-align: center;
-    margin-bottom: 20px;
+/* Reduce space below company info (before map/form) */
+.contact-page .company-info {
+    margin-bottom: 8px;
+}
+
+/* Reduce gap between map and form if needed */
+.contact-layout {
+    gap: 16px;
+    /* was 24px */
 }
 
 /* Map + form */
