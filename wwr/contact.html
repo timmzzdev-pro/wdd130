@@ -7,7 +7,7 @@
 
     <title>Contact Us | White Water Rafting Company</title>
     <meta name="description"
-      content="Contact White Water Rafting Company for general inquiries, reservations, or website suggestions. Find our address, phone number, email, staff profiles, and location map.">
+      content="Contact White Water Rafting Company for general inquiries, reservations, or website suggestions. Find our address, phone number, email, staff, and location map.">
 
     <meta name="author" content="Olajide Timilehin">
     <link rel="stylesheet" href="styles/rafting.css">
@@ -15,9 +15,9 @@
 
 <body>
 
-    <!-- HEADER (SAME AS OTHER PAGES) -->
+    <!-- ================= HEADER ================= -->
     <header class="site-header">
-        <img src="images/z-therapidssplash.jpg" alt="Whitewater rafting logo">
+        <img src="images/z-therapidssplash.jpg" alt="Whitewater rafting company logo">
 
         <nav class="nav-box">
             <ul class="navigation">
@@ -29,21 +29,22 @@
         </nav>
     </header>
 
-    <!-- MAIN -->
+    <!-- ================= MAIN ================= -->
     <main class="contact-page">
 
-        <!-- COMPANY INFO -->
+        <!-- Company Information -->
         <section class="company-info">
             <h1>White Water Rafting Company</h1>
-            <p>123 Main River Street<br>Kolob, California</p>
+            <p>123 Main River Street</p>
+            <p>Kolob, California</p>
             <p>+1 999 999 9999</p>
             <p>info@whitewater.com</p>
         </section>
 
-        <!-- MAP + FORM -->
+        <!-- Map + Form -->
         <section class="contact-layout">
 
-            <!-- MAP -->
+            <!-- Map -->
             <div class="map-box">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63408.95626070473!2d3.333726648374032!3d6.639500591994381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bd1f3e91f564d%3A0x15354cf6c01de3e1!2sBerger%20Bus-Stop!5e0!3m2!1sen!2sng!4v1770255127670!5m2!1sen!2sng"
@@ -51,17 +52,17 @@
                 </iframe>
             </div>
 
-            <!-- FORM -->
+            <!-- Form -->
             <div class="form-box">
-                <form>
-                    <label>Name
-                        <input type="text" required>
-                    </label>
+                <form action="#" method="post">
 
-                    <label>Email
-                        <input type="email" required>
-                    </label>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
 
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <!-- Message Purpose -->
                     <fieldset class="purpose-group">
                         <legend>Message Purpose</legend>
 
@@ -81,52 +82,59 @@
                         </label>
                     </fieldset>
 
-
-                    <label>Message
-                        <textarea rows="4" required></textarea>
-                    </label>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
 
                     <label class="newsletter">
-                        <input type="checkbox"> Please subscribe me to the monthly newsletter
+                        <input type="checkbox" name="newsletter">
+                        Please subscribe me to the monthly newsletter
                     </label>
 
                     <button type="submit" class="submit-btn">Get in Touch!</button>
+
                 </form>
             </div>
+
         </section>
 
-        <!-- EMPLOYEES -->
+        <!-- Employees -->
         <section class="employees">
             <h2>We Are Here to Serve You</h2>
 
             <div class="employee-grid">
                 <figure>
-                    <img src="images/tttiimm.avif" River Guide">
+                    <img src="images/employee1.jpg" alt="Lead River Guide">
                     <figcaption>Lead River Guide</figcaption>
                 </figure>
 
                 <figure>
-                    <img src="images/tm.avif" Trip Planner">
+                    <img src="images/employee2.jpg" alt="Trip Coordinator">
                     <figcaption>Trip Coordinator</figcaption>
                 </figure>
 
                 <figure>
-                    <img src="images/tim.avif" Operations Manager">
-                    <figcaption>Operations Manager</figcaption>
+                    <img src="images/employee3.jpg" alt="Safety Manager">
+                    <figcaption>Safety Manager</figcaption>
                 </figure>
             </div>
         </section>
 
     </main>
 
-    <!-- FOOTER (SAME AS OTHER PAGES) -->
+    <!-- ================= FOOTER ================= -->
     <footer class="site-footer">
         <p>©2026 💦Whitewater Rafting💦 | Olajide Timilehin</p>
 
         <nav class="socialmedia">
-            <a href="#"><img src="images/facebook-color-svgrepo-com.svg" alt="Facebook"></a>
-            <a href="#"><img src="images/linkedin-svgrepo-com.svg" alt="LinkedIn"></a>
-            <a href="#"><img src="images/instagram-1-svgrepo-com.svg" alt="Instagram"></a>
+            <a href="https://facebook.com/">
+                <img src="images/facebook-color-svgrepo-com.svg" alt="Facebook icon">
+            </a>
+            <a href="https://linkedin.com/">
+                <img src="images/linkedin-svgrepo-com.svg" alt="LinkedIn icon">
+            </a>
+            <a href="https://instagram.com/">
+                <img src="images/instagram-1-svgrepo-com.svg" alt="Instagram icon">
+            </a>
         </nav>
     </footer>
 
