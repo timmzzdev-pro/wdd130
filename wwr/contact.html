@@ -5,19 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Contact Us | White Water Rafting Company</title>
+    <!-- IMPORTANT: page-specific metadata -->
+    <title>Contact Us | White Water Rafting</title>
     <meta name="description"
-      content="Contact White Water Rafting Company for general inquiries, reservations, or website suggestions. Find our address, phone number, email, staff, and location map.">
-
+      content="Contact White Water Rafting for reservations, questions, or suggestions. Find our address, phone number, map location, and send us a message.">
     <meta name="author" content="Olajide Timilehin">
+
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
 
-    <!-- ================= HEADER ================= -->
+    <!-- HEADER (UNCHANGED) -->
     <header class="site-header">
-        <img src="images/z-therapidssplash.jpg" alt="Whitewater rafting company logo">
+        <img src="images/z-therapidssplash.jpg" alt="White Water Rafting logo">
 
         <nav class="nav-box">
             <ul class="navigation">
@@ -29,111 +30,110 @@
         </nav>
     </header>
 
-    <!-- ================= MAIN ================= -->
     <main class="contact-page">
 
-        <!-- Company Information -->
+        <h1>Contact Us</h1>
+
+        <!-- COMPANY INFO -->
         <section class="company-info">
-            <h1>White Water Rafting Company</h1>
-            <p>123 Main River Street</p>
-            <p>Kolob, California</p>
-            <p>+1 999 999 9999</p>
-            <p>info@whitewater.com</p>
+            <p><strong>Address:</strong> Berger Bus Stop, Lagos, Nigeria</p>
+            <p><strong>Phone:</strong> +234 801 234 5678</p>
+            <p><strong>Email:</strong> info@whitewaterrafting.com</p>
         </section>
 
-        <!-- Map + Form -->
+        <!-- MAP + FORM -->
         <section class="contact-layout">
 
-            <!-- Map -->
+            <!-- MAP -->
             <div class="map-box">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63408.95626070473!2d3.333726648374032!3d6.639500591994381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bd1f3e91f564d%3A0x15354cf6c01de3e1!2sBerger%20Bus-Stop!5e0!3m2!1sen!2sng!4v1770255127670!5m2!1sen!2sng"
-                  loading="lazy" allowfullscreen>
+                  loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
             </div>
 
-            <!-- Form -->
+            <!-- FORM -->
             <div class="form-box">
-                <form action="#" method="post">
+                <form>
 
                     <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
+                    <input type="text" id="name" required>
 
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" required>
 
-                    <!-- Message Purpose -->
+                    <!-- MESSAGE PURPOSE -->
                     <fieldset class="purpose-group">
                         <legend>Message Purpose</legend>
 
                         <label>
-                            <input type="radio" name="purpose" value="general" required>
-                            General Inquiry
+                            <input type="radio" name="purpose" required>
                         </label>
-
                         <label>
-                            <input type="radio" name="purpose" value="reservation">
-                            Reservation Question
+                            <input type="radio" name="purpose">
                         </label>
-
                         <label>
-                            <input type="radio" name="purpose" value="website">
-                            Website Suggestion
+                            <input type="radio" name="purpose">
                         </label>
                     </fieldset>
 
+                    <!-- MESSAGE -->
                     <label for="message">Message</label>
-                    <textarea id="message" name="message" required></textarea>
+                    <textarea id="message"></textarea>
 
+                    <!-- NEWSLETTER -->
                     <label class="newsletter">
-                        <input type="checkbox" name="newsletter">
+                        <input type="checkbox">
                         Please subscribe me to the monthly newsletter
                     </label>
 
-                    <button type="submit" class="submit-btn">Get in Touch!</button>
+                    <!-- BUTTON -->
+                    <button type="submit" class="submit-btn">
+                        Send Message
+                    </button>
 
                 </form>
             </div>
 
         </section>
 
-        <!-- Employees -->
+        <!-- EMPLOYEES -->
         <section class="employees">
-            <h2>We Are Here to Serve You</h2>
+            <h2>Our Team</h2>
 
             <div class="employee-grid">
                 <figure>
-                    <img src="images/employee1.jpg" alt="Lead River Guide">
-                    <figcaption>Lead River Guide</figcaption>
+                    <img src="images/tttiimm.avif" River Guide">
+                    <figcaption>Alex Johnson<br>Lead Guide</figcaption>
                 </figure>
 
                 <figure>
-                    <img src="images/employee2.jpg" alt="Trip Coordinator">
-                    <figcaption>Trip Coordinator</figcaption>
+                    <img src="images/tm.avif" Operations Manager">
+                    <figcaption>Maria Lopez<br>Operations Manager</figcaption>
                 </figure>
 
                 <figure>
-                    <img src="images/employee3.jpg" alt="Safety Manager">
-                    <figcaption>Safety Manager</figcaption>
+                    <img src="images/tim.avif" Customer Support">
+                    <figcaption>Daniel Smith<br>Customer Support</figcaption>
                 </figure>
             </div>
         </section>
 
     </main>
 
-    <!-- ================= FOOTER ================= -->
+    <!-- FOOTER (UNCHANGED) -->
     <footer class="site-footer">
         <p>©2026 💦Whitewater Rafting💦 | Olajide Timilehin</p>
 
         <nav class="socialmedia">
             <a href="https://facebook.com/">
-                <img src="images/facebook-color-svgrepo-com.svg" alt="Facebook icon">
+                <img src="images/facebook-color-svgrepo-com.svg" alt="Facebook">
             </a>
             <a href="https://linkedin.com/">
-                <img src="images/linkedin-svgrepo-com.svg" alt="LinkedIn icon">
+                <img src="images/linkedin-svgrepo-com.svg" alt="LinkedIn">
             </a>
             <a href="https://instagram.com/">
-                <img src="images/instagram-1-svgrepo-com.svg" alt="Instagram icon">
+                <img src="images/instagram-1-svgrepo-com.svg" alt="Instagram">
             </a>
         </nav>
     </footer>

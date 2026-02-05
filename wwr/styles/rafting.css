@@ -215,87 +215,70 @@ article {
 }
 
 /* ================================
-   Contact Page – Wireframe Locked
+   CONTACT PAGE
 ================================ */
 
-.contact-page {
-    width: 840px;
-    margin: 0 auto;
+.contact-page h1 {
+    text-align: center;
+    margin-bottom: 10px;
 }
 
-/* ---------- Company Info ---------- */
 .company-info {
     text-align: center;
-    margin: 20px 0;
+    margin-bottom: 20px;
 }
 
-.company-info h1 {
-    margin-bottom: 6px;
-}
-
-/* ---------- Map + Form Layout ---------- */
+/* Map + form */
 .contact-layout {
     display: grid;
-    grid-template-columns: 380px 420px;
-    /* map | form */
-    column-gap: 20px;
-    margin-bottom: 30px;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
 }
 
 /* Map */
 .map-box iframe {
-    width: 380px;
-    height: 300px;
+    width: 100%;
+    height: 350px;
     border: none;
 }
 
-/* ---------- Form ---------- */
+/* Form */
 .form-box form {
     display: grid;
     grid-template-columns: 140px 1fr;
-    row-gap: 10px;
-    column-gap: 10px;
-    align-items: center;
+    row-gap: 12px;
 }
 
-/* Labels */
 .form-box label {
-    font-size: 0.95rem;
+    font-weight: bold;
 }
 
-/* Inputs */
-.form-box input[type="text"],
-.form-box input[type="email"],
+.form-box input,
 .form-box textarea {
-    width: 100%;
     padding: 6px;
 }
 
-/* ---------- Message Purpose (EXACT MATCH) ---------- */
+/* ---------- Message Purpose (EXACT WIREFRAME) ---------- */
 .purpose-group {
     grid-column: 1 / -1;
-
     display: grid;
     grid-template-columns: 140px auto 1fr;
     grid-template-rows: repeat(3, 24px);
     column-gap: 10px;
-    align-items: center;
-
+    align-items: start;
     border: none;
     padding: 0;
-    margin: 0;
 }
 
-/* Legend in middle row */
 .purpose-group legend {
     grid-column: 1;
-    grid-row: 2;
+    grid-row: 1;
     font-weight: bold;
 }
 
-/* Radio buttons column */
 .purpose-group label {
     display: contents;
+    font-size: 0;
 }
 
 .purpose-group label:nth-of-type(1) input {
@@ -313,40 +296,46 @@ article {
     grid-row: 3;
 }
 
-/* Text column */
 .purpose-group label:nth-of-type(1)::after {
     content: "General Inquiry";
     grid-column: 3;
     grid-row: 1;
+    font-size: 0.95rem;
 }
 
 .purpose-group label:nth-of-type(2)::after {
     content: "Reservation Question";
     grid-column: 3;
     grid-row: 2;
+    font-size: 0.95rem;
 }
 
 .purpose-group label:nth-of-type(3)::after {
     content: "Website Suggestion";
     grid-column: 3;
     grid-row: 3;
+    font-size: 0.95rem;
 }
 
-/* ---------- Message textarea ---------- */
+/* Message */
+label[for="message"],
 textarea {
-    grid-column: 2;
+    grid-column: 1 / -1;
+}
+
+textarea {
     height: 80px;
 }
 
-/* ---------- Newsletter ---------- */
+/* Newsletter */
 .newsletter {
-    grid-column: 2;
+    grid-column: 1 / -1;
     font-size: 0.9rem;
 }
 
-/* ---------- Button ---------- */
+/* Button */
 .submit-btn {
-    grid-column: 2;
+    grid-column: 1 / -1;
     width: 160px;
     padding: 8px;
     background-color: var(--primary-color);
@@ -355,12 +344,11 @@ textarea {
     cursor: pointer;
 }
 
-/* ---------- Employees ---------- */
-.employees h2 {
-    text-align: center;
-    margin-bottom: 12px;
+.submit-btn:hover {
+    background-color: #3d850c;
 }
 
+/* Employees */
 .employee-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
