@@ -231,6 +231,7 @@ article {
 
 /* Reduce space below company info (before map/form) */
 .contact-page .company-info {
+    text-align: center;
     margin-bottom: 8px;
 }
 
@@ -284,7 +285,7 @@ article {
 
 .purpose-group legend {
     grid-column: 1;
-    grid-row: 1;
+    grid-row: 2;
     font-weight: bold;
 }
 
