@@ -54,9 +54,6 @@ footer {
 
 }
 
-/* ================================
-   Navigation (MATCHES IMAGE)
-================================ */
 .nav-box {
     display: flex;
     justify-content: flex-end;
@@ -92,9 +89,6 @@ footer {
     transition: 0.3s;
 }
 
-/* ================================
-   Headings
-================================ */
 h1,
 h2,
 h3 {
@@ -103,9 +97,6 @@ h3 {
     text-align: center;
 }
 
-/* ================================
-   Spacing
-================================ */
 nav,
 p,
 section,
@@ -114,9 +105,6 @@ article {
     padding: 8px;
 }
 
-/* ================================
-   Hero Section
-================================ */
 .hero {
     position: relative;
 }
@@ -159,9 +147,6 @@ article {
     box-shadow: 0 0 60px #1a2131;
 }
 
-/* ================================
-   History Section
-================================ */
 .history-content {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
@@ -174,9 +159,6 @@ article {
     box-shadow: 0 0 20px #a9c6d2;
 }
 
-/* ================================
-   Adventures Section
-================================ */
 .adventure-gallery {
     display: flex;
     justify-content: space-between;
@@ -188,9 +170,6 @@ article {
     box-shadow: 0 0 40px #acabab;
 }
 
-/* ================================
-   Footer
-================================ */
 .site-footer {
     display: flex;
     justify-content: space-between;
@@ -206,22 +185,12 @@ article {
     box-shadow: 0 0 20px #397790;
 }
 
-/* ================================
-   CONTACT PAGE
-================================ */
-
-/* ================================
-   Contact Page Spacing Fix
-================================ */
-
-/* Reduce spacing between address, phone, email */
 .contact-page .company-info p {
     margin: 4px 0;
     /* tighter vertical spacing */
     padding: 0;
 }
 
-/* Reduce space below company info (before map/form) */
 .contact-page .company-info {
     text-align: center;
     margin-bottom: 8px;
@@ -257,7 +226,6 @@ article {
     padding: 6px;
 }
 
-/* ---------- Message Purpose (EXACT WIREFRAME) ---------- */
 .purpose-group {
     grid-column: 1 / -1;
     display: grid;
